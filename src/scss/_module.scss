@@ -1,0 +1,35 @@
+.no-sm-up {
+  @include media-up(sm) {
+    display: none;
+  }
+}
+
+.no-sm-down {
+  @include media-down(sm) {
+    display: none;
+  }
+}
+
+.no-md-up {
+  @include media-up(md) {
+    display: none;
+  }
+}
+
+.no-md-down {
+  @include media-down(md) {
+    display: none;
+  }
+}
+
+.no-lg-up {
+  @include media-up(lg) {
+    display: none;
+  }
+}
+
+.no-lg-down {
+  @include media-down(lg) {
+    display: none;
+  }
+}

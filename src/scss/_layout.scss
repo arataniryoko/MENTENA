@@ -1,0 +1,11 @@
+.l-container {
+  max-width: 1020px;
+  padding: 0 5%;
+  margin: 0 auto;
+  @include media-up(sm) {
+    padding: 0 3%;
+  }
+  @include media-up(md) {
+    padding: 0 30px;
+  }
+}

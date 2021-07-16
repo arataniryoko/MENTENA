@@ -1,0 +1,71 @@
+
+// black-white
+$black-100: rgba(0, 0, 0, 1);
+$black-087: rgba(0, 0, 0, 0.87);
+$black-054: rgba(0, 0, 0, 0.54);
+$black-026: rgba(0, 0, 0, 0.26);
+$black-012: rgba(0, 0, 0, 0.12);
+$black-005: rgba(0, 0, 0, 0.05);
+
+$white-100: rgba(255, 255, 255, 1);
+$white-070: rgba(255, 255, 255, 0.7);
+$white-030: rgba(255, 255, 255, 0.3);
+$white-012: rgba(255, 255, 255, 0.12);
+
+// color
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #707070; //text main
+$color-gray-light: #BFD1E0; //border
+$color-gray-ultralight: #F5F5F5; //background
+$color-main: #D12E0F;
+$color-main-dark: #00194d;
+$color-main-light: #657786;
+$color-main-ultralight: #f8fafe;
+$color-main-bg: #F8F6EA;
+$color-blue: #0A3A62;
+$color-red: #FD5C5C;
+$color-yellow: #FFD14F;
+$color-orange: #FF9800;
+
+// font-family
+$font-sans: 'Noto Sans JP',"Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Noto Sans JP",
+  Meiryo, メイリオ, sans-serif;
+$font-serif: Georgia, 'Noto Serif JP', "Hiragino Mincho ProN",
+  HGS明朝E, メイリオ, Meiryo, serif;
+
+$font-en: 'Barlow', sans-serif;
+$font-en-serif: 'Libre Baskerville', serif;
+
+// breakpoints bootstrapと共通
+$breakpoint-up: (
+  "xs": "screen and (min-width: 425px)",
+  "sm": "screen and (min-width: 554px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+  "xxl": "screen and (min-width: 1400px)"
+) !default;
+
+$breakpoint-down: (
+  "xs": "screen and (max-width: 424px)",
+  "sm": "screen and (max-width: 553px)",
+  "md": "screen and (max-width: 767px)",
+  "lg": "screen and (max-width: 991px)",
+  "xl": "screen and (max-width: 1199px)"
+) !default;
+
+@mixin media-up($breakpoint: md) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin media-down($breakpoint: md) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+
+$golden-ratio: 1.618;
+$silver-ratio: 1.414;
